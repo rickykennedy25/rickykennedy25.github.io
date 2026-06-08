@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky Kennedy — Backend Engineer</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Stars -->
+<div class="stars-bg" id="stars"></div>
+
+<!-- Floating code badges -->
+<div class="float-badge" style="top:12%;left:3%;--fdur:22s;--fdelay:0s;--rot:-5deg;background:rgba(88,166,255,0.1);border:1px solid rgba(88,166,255,0.2);color:#58A6FF;">if (AI) {</div>
+<div class="float-badge" style="top:28%;left:1%;--fdur:18s;--fdelay:3s;--rot:3deg;background:rgba(247,201,72,0.1);border:1px solid rgba(247,201,72,0.2);color:#F7C948;">&lt;/&gt;</div>
+<div class="float-badge" style="top:55%;left:2%;--fdur:25s;--fdelay:1s;--rot:-3deg;background:rgba(63,185,80,0.1);border:1px solid rgba(63,185,80,0.2);color:#3FB950;">func main()</div>
+<div class="float-badge" style="top:72%;left:4%;--fdur:20s;--fdelay:5s;--rot:6deg;background:rgba(240,136,62,0.1);border:1px solid rgba(240,136,62,0.2);color:#F0883E;">404</div>
+<div class="float-badge" style="top:10%;right:3%;--fdur:19s;--fdelay:2s;--rot:4deg;background:rgba(121,192,255,0.1);border:1px solid rgba(121,192,255,0.2);color:#79C0FF;">1011100</div>
+<div class="float-badge" style="top:35%;right:2%;--fdur:23s;--fdelay:4s;--rot:-6deg;background:rgba(255,123,114,0.1);border:1px solid rgba(255,123,114,0.2);color:#FF7B72;">&lt;div&gt;</div>
+<div class="float-badge" style="top:65%;right:3%;--fdur:21s;--fdelay:1s;--rot:2deg;background:rgba(63,185,80,0.1);border:1px solid rgba(63,185,80,0.2);color:#3FB950;">go run .</div>
+
+<div class="page">
+
+    <!-- Nav -->
+    <nav>
+        <div class="nav-logo">
+            <div class="nav-logo-dot"></div>
+            ricky.dev
+        </div>
+        <ul class="nav-links">
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div>
+            <h1><span class="first">Ricky</span><br><span class="last">Kennedy</span></h1>
+            <div class="hero-title-sub">Software Engineer — Backend</div>
+            <p class="hero-desc">
+                Backend engineer with 5+ years building high-throughput systems across fintech, e-commerce, and travel in Southeast Asia. Passionate about distributed systems, clean architecture, and shipping things that actually work.
+            </p>
+            <div class="cta-row">
+                <a href="#contact" class="btn btn-yellow">ping me ↗</a>
+                <a href="https://www.linkedin.com/in/ricky-kennedy/" target="_blank" class="btn btn-ghost">LinkedIn</a>
+                <a href="https://github.com/rickykennedy25" target="_blank" class="btn btn-ghost">GitHub</a>
+                <a href="javascript:window.print()" class="btn btn-ghost">print PDF</a>
+            </div>
+        </div>
+        <div class="avatar-frame">
+            <img src="assets/ai_profile.png" alt="Ricky Kennedy" class="avatar"/>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-row">
+        <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">years experience</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">4</div>
+            <div class="stat-label">companies</div>
+        </div>
+        <div class="stat-num" style="display:none"></div>
+        <div class="stat-card">
+            <div class="stat-num">90→15</div>
+            <div class="stat-label">min cron job fix</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">&lt;200ms</div>
+            <div class="stat-label">API latency achieved</div>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="section-head">
+            <span class="section-num">01</span>
+            <h2>Experience</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-sidebar">
+                <div class="exp-period">Jul 2024 — present</div>
+                <span class="exp-company-badge badge-kredivo">Kredivo Group</span>
+                <div class="exp-loc">Southeast Asia</div>
+            </div>
+            <div>
+                <div class="exp-role">Software Engineer — Backend</div>
+                <div class="exp-team">// Core Banking</div>
+                <ul class="exp-bullets">
+                    <li>Led end-to-end project cycles from requirements gathering to <span class="hi">production deployment</span> using Go.</li>
+                    <li>Optimised a critical cron job processing <span class="hi-green">~200k records</span>, reducing execution time from <span class="hi">90 minutes → under 15 minutes</span> using pprof profiling, removing unnecessary joins, and vertical scaling.</li>
+                    <li>Maintained and improved high-throughput backend services serving <span class="hi-green">500k–1M active users</span>, ensuring stability and performance SLAs.</li>
+                    <li>Managed large-scale data processing jobs handling <span class="hi">~1M records</span>, consistently completing within SLA (&lt;1 hour).</li>
+                    <li>Collaborated across Product, QA, and Infrastructure for reliable service performance and smooth release cycles.</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag tag-go">Go</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Kafka</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">Datadog</span>
+                    <span class="tag">Scalyr</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-sidebar">
+                <div class="exp-period">Sep 2022 — Feb 2024</div>
+                <span class="exp-company-badge badge-xendit">Xendit</span>
+                <div class="exp-loc">Southeast Asia</div>
+            </div>
+            <div>
+                <div class="exp-role">Software Engineer — Backend</div>
+                <div class="exp-team">// Forex</div>
+                <ul class="exp-bullets">
+                    <li>Led full project cycles from user meetings to technical docs, using <span class="hi">Go</span> for services and <span class="hi">ReactJS</span> for UI, ensuring smooth testing and deployment.</li>
+                    <li>Dramatically improved API latency from <span class="hi">&gt;1s → &lt;200ms</span> by applying DB indexing and strategic query clauses to limit data scanning.</li>
+                    <li>Implemented <span class="hi-blue">Redis Distributed Locking</span> for secure and exclusive third-party instance connections, boosting system availability.</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag tag-go">Go</span>
+                    <span class="tag tag-py">Python</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">Amazon SNS</span>
+                    <span class="tag">Amazon SQS</span>
+                    <span class="tag">ReactJS</span>
+                    <span class="tag">Datadog</span>
+                    <span class="tag">Splunk</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-sidebar">
+                <div class="exp-period">Aug 2021 — Aug 2022</div>
+                <span class="exp-company-badge badge-traveloka">Traveloka</span>
+                <div class="exp-loc">Indonesia</div>
+            </div>
+            <div>
+                <div class="exp-role">Software Engineer — Backend</div>
+                <div class="exp-team">// Merchant Eats</div>
+                <ul class="exp-bullets">
+                    <li>Managed end-to-end project lifecycles using <span class="hi-orange">Java</span> for service development and ReactJS for UI, ensuring seamless testing and deployment.</li>
+                    <li>Maintained web service with Java local framework and RPC protocol.</li>
+                    <li>Employed <span class="hi">JUnit</span> for meticulous web service testing strategies.</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag tag-java">Java</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">AuroraDB</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">ReactJS</span>
+                    <span class="tag">Localstack</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-sidebar">
+                <div class="exp-period">Jul 2020 — Aug 2021</div>
+                <span class="exp-company-badge badge-blibli">Blibli</span>
+                <div class="exp-loc">Indonesia</div>
+            </div>
+            <div>
+                <div class="exp-role">Associate Software Engineer — Backend</div>
+                <div class="exp-team">// Product Detail</div>
+                <ul class="exp-bullets">
+                    <li>Maintained product detail web service/APIs using <span class="hi-orange">Spring Boot</span> and Project Reactor.</li>
+                    <li>Integrated installment calculator feature with bank service.</li>
+                    <li>Testing strategies employing <span class="hi">JUnit, Integration Test, and JMeter</span>.</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag tag-java">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Project Reactor</span>
+                    <span class="tag">RxJava</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Elastic Search</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="section-head">
+            <span class="section-num">02</span>
+            <h2>Skills</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-card-title">Languages</div>
+                <div class="skill-items">
+                    <span class="s-pill">Go</span><span class="s-pill">Java</span><span class="s-pill">Python</span>
+                    <span class="s-pill">TypeScript</span><span class="s-pill">C/C++</span><span class="s-pill">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-title">Messaging</div>
+                <div class="skill-items">
+                    <span class="s-pill">Kafka</span><span class="s-pill">Amazon SQS</span><span class="s-pill">Amazon SNS</span>
+                    <span class="s-pill">Event-driven</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-title">Databases</div>
+                <div class="skill-items">
+                    <span class="s-pill">PostgreSQL</span><span class="s-pill">MySQL</span><span class="s-pill">MongoDB</span>
+                    <span class="s-pill">Redis</span><span class="s-pill">AuroraDB</span><span class="s-pill">Elastic Search</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-title">Frameworks</div>
+                <div class="skill-items">
+                    <span class="s-pill">Mux</span><span class="s-pill">Spring Boot</span><span class="s-pill">Flask</span>
+                    <span class="s-pill">ReactJS</span><span class="s-pill">Vue JS</span><span class="s-pill">Project Reactor</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-title">Cloud & Infra</div>
+                <div class="skill-items">
+                    <span class="s-pill">AWS</span><span class="s-pill">Docker</span><span class="s-pill">Localstack</span>
+                    <span class="s-pill">Git</span><span class="s-pill">Datadog</span><span class="s-pill">Splunk</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-title">Architecture</div>
+                <div class="skill-items">
+                    <span class="s-pill">Microservices</span><span class="s-pill">Distributed systems</span>
+                    <span class="s-pill">REST APIs</span><span class="s-pill">RPC</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="section-head">
+            <span class="section-num">03</span>
+            <h2>Education</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="edu-card">
+            <div class="edu-left">
+                <div class="edu-degree">S.T. (B.Sc.) in Computer Science</div>
+                <div class="edu-school">Bandung Institute of Technology (ITB)</div>
+                <div class="edu-detail">Bandung, Indonesia · 2016 – 2020</div>
+                <div style="margin-top:12px;">
+                    <div style="font-family:var(--mono);font-size:11px;color:var(--text3);margin-bottom:6px;">// organizational experience</div>
+                    <div style="font-size:13px;color:var(--text2);">Head of Extra Campus Division, <span style="color:var(--cyan)">HMIF ITB</span> · Feb 2019 – Feb 2020</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="section-head">
+            <span class="section-num">04</span>
+            <h2>Projects & Research</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="proj-grid">
+            <div class="proj-card">
+                <div class="proj-title">🎵 Music Recommender System</div>
+                <p class="proj-desc">Hybrid filtration recommendation engine leveraging user history and user groups to generate personalised music lists.</p>
+                <div class="tags"><span class="tag tag-py">Python</span><span class="tag">Flask</span><span class="tag">Vue JS</span></div>
+            </div>
+            <div class="proj-card">
+                <div class="proj-title">📊 Jabar Data Visualisation</div>
+                <p class="proj-desc">Visualised regional revenues and expenditures budget data for West Java. Built web service and UI to support the data viz pipeline.</p>
+                <div class="tags"><span class="tag tag-py">Flask Python</span><span class="tag">Vue JS</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="section-head">
+            <span class="section-num">05</span>
+            <h2>Get in touch</h2>
+            <div class="section-line"></div>
+        </div>
+        <p style="color:var(--text2);font-size:14px;margin-bottom:24px;max-width:460px;">
+            Open to backend engineering roles in Southeast Asia.
+            Especially interested in fintech, banking, and infrastructure-focused companies.
+        </p>
+        <div class="contact-grid">
+            <a href="mailto:rickykennedy25@gmail.com" class="contact-card">
+                <div class="contact-icon-wrap">📧</div>
+                <div>
+                    <div class="contact-lbl">Email</div>
+                    <div class="contact-val">rickykennedy25@gmail.com</div>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ricky-kennedy/" target="_blank" class="contact-card">
+                <div class="contact-icon-wrap">💼</div>
+                <div>
+                    <div class="contact-lbl">LinkedIn</div>
+                    <div class="contact-val">linkedin.com/in/ricky-kennedy</div>
+                </div>
+            </a>
+            <a href="https://github.com/rickykennedy25" target="_blank" class="contact-card">
+                <div class="contact-icon-wrap">🐙</div>
+                <div>
+                    <div class="contact-lbl">GitHub</div>
+                    <div class="contact-val">github.com/rickykennedy25</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-status">
+            <div class="dot-green"></div>
+            <span> Jakarta, Indonesia </span>
+        </div>
+        <span>© 2026 Ricky Kennedy</span>
+    </footer>
+
+</div>
+
+<script>
+    // Generate stars
+    const starsEl = document.getElementById("stars");
+    for (let i = 0; i < 120; i++) {
+        const s = document.createElement("div");
+        s.className = "star";
+        const size = Math.random() * 2.5 + 0.5;
+        s.style.cssText = `
+    width:${size}px;height:${size}px;
+    left:${Math.random()*100}%;top:${Math.random()*100}%;
+    --dur:${2+Math.random()*4}s;
+    --delay:${Math.random()*5}s;
+    --op:${0.3+Math.random()*0.6};
+  `;
+        starsEl.appendChild(s);
+    }
+</script>
+</body>
+</html>
